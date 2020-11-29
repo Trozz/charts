@@ -1,0 +1,23 @@
+apiVersion: v1
+entries:
+  homer:
+  - apiVersion: v1
+    appVersion: 20.07.2
+    created: "2020-11-29T21:50:38.22626268Z"
+    description: A Helm chart for Homer https://github.com/bastienwirtz/homer
+    digest: 20892c674e60321c659395738bfc3f621a02c1d77a96bc90719efea6b134edd4
+    name: homer
+    urls:
+    - https://github.com/Trozz/charts/releases/download/homer-0.0.1/homer-0.0.1.tgz
+    version: 0.0.1
+  karma:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-11-29T21:50:38.304122329Z"
+    description: A Helm chart for Kubernetes
+    digest: 3f720f9d422ad22df89aa07e63d2d1f77e15cfa1e8f064340f03ca0cca149de6
+    name: karma
+    urls:
+    - https://github.com/Trozz/charts/releases/download/karma-0.0.3/karma-0.0.3.tgz
+    version: 0.0.3
+generated: "2020-11-29T21:50:38.134991925Z"
