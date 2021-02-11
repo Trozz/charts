@@ -13,6 +13,15 @@ entries:
   karma:
   - apiVersion: v1
     appVersion: "1.0"
+    created: "2021-02-11T01:51:26.277693519Z"
+    description: A Helm chart for Kubernetes
+    digest: 1ac7c26b3343ebf3792f2d9af9124b930244befef58034b35aac04644d117048
+    name: karma
+    urls:
+    - https://github.com/Trozz/charts/releases/download/karma-0.0.5/karma-0.0.5.tgz
+    version: 0.0.5
+  - apiVersion: v1
+    appVersion: "1.0"
     created: "2021-02-11T01:48:45.945031575Z"
     description: A Helm chart for Kubernetes
     digest: 7a932b450dc6f9f2baefd93fb254b28e671e2927f38dcd30e5c853ada2e59415
