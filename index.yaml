@@ -38,4 +38,23 @@ entries:
     urls:
     - https://github.com/Trozz/charts/releases/download/karma-0.0.3/karma-0.0.3.tgz
     version: 0.0.3
-generated: "2020-11-29T21:50:38.134991925Z"
+  kubernetes-external-secrets:
+  - apiVersion: v1
+    appVersion: 6.3.0
+    created: "2021-02-25T11:50:28.613804553Z"
+    description: Kubernetes External Secrets CustomResourceDefinition
+    digest: d293b732d88275eb07d860294329180dba8e9c9d22440c9b8c3f44da0d0d496d
+    home: https://github.com/external-secrets/kubernetes-external-secrets
+    keywords:
+    - kubernetes-external-secrets
+    - secrets
+    maintainers:
+    - name: external-secrets
+      url: https://github.com/external-secrets
+    name: kubernetes-external-secrets
+    sources:
+    - https://github.com/external-secrets/kubernetes-external-secrets
+    urls:
+    - https://github.com/Trozz/charts/releases/download/kubernetes-external-secrets-6.3.0/kubernetes-external-secrets-6.3.0.tgz
+    version: 6.3.0
+generated: "2021-02-25T11:50:28.613817453Z"
