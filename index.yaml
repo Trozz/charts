@@ -57,4 +57,15 @@ entries:
     urls:
     - https://github.com/Trozz/charts/releases/download/kubernetes-external-secrets-6.3.0/kubernetes-external-secrets-6.3.0.tgz
     version: 6.3.0
-generated: "2021-02-25T11:50:28.613817453Z"
+  nessus:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-02-25T15:06:47.752460839Z"
+    description: A Helm chart for Kubernetes
+    digest: 58d514892d1a75e6dda1b664bb0aed9ea08ce24c7f9869616e543883b3412792
+    name: nessus
+    type: application
+    urls:
+    - https://github.com/Trozz/charts/releases/download/nessus-0.1.0/nessus-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-02-25T15:06:47.75247304Z"
