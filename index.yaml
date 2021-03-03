@@ -1,5 +1,27 @@
 apiVersion: v1
 entries:
+  atlantis:
+  - apiVersion: v1
+    appVersion: v0.16.1
+    created: "2021-03-03T21:22:40.330802648Z"
+    description: A Helm chart for Atlantis https://www.runatlantis.io
+    digest: 3397c449e2a3380473dd3c3cdf47d505954c6dbac5500bfb3eb8570e6a0962c3
+    home: https://www.runatlantis.io
+    icon: https://www.runatlantis.io/hero.png
+    keywords:
+    - terraform
+    maintainers:
+    - name: jkodroff
+    - name: callmeradical
+    - name: jeff-knurek
+    - name: lkysow
+    - name: anubhavmishra
+    name: atlantis
+    sources:
+    - https://github.com/runatlantis/atlantis
+    urls:
+    - https://github.com/Trozz/charts/releases/download/atlantis-3.12.11/atlantis-3.12.11.tgz
+    version: 3.12.11
   homer:
   - apiVersion: v1
     appVersion: 20.07.2
@@ -78,4 +100,4 @@ entries:
     urls:
     - https://github.com/Trozz/charts/releases/download/securenote-0.0.1/securenote-0.0.1.tgz
     version: 0.0.1
-generated: "2021-02-25T15:53:16.609620315Z"
+generated: "2021-03-03T21:22:40.330813848Z"
