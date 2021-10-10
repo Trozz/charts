@@ -88,6 +88,17 @@ entries:
     urls:
     - https://github.com/Trozz/charts/releases/download/kubernetes-external-secrets-6.3.0/kubernetes-external-secrets-6.3.0.tgz
     version: 6.3.0
+  monitoror:
+  - apiVersion: v2
+    appVersion: "4"
+    created: "2021-10-10T20:14:42.366319828Z"
+    description: monitoror installation
+    digest: 3629d1b21471436520c216670b163a030826829abbdd7811e3ff678c087969b7
+    name: monitoror
+    type: application
+    urls:
+    - https://github.com/Trozz/charts/releases/download/monitoror-0.0.1/monitoror-0.0.1.tgz
+    version: 0.0.1
   nessus:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -109,4 +120,4 @@ entries:
     urls:
     - https://github.com/Trozz/charts/releases/download/securenote-0.0.1/securenote-0.0.1.tgz
     version: 0.0.1
-generated: "2021-10-10T13:08:33.647670948Z"
+generated: "2021-10-10T20:14:42.366344628Z"
