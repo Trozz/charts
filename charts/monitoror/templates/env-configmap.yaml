@@ -1,0 +1,17 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: {{ include "helper.name" . }}-env
+  namespace: {{ .Release.Namespace | quote }}
+  labels:
+    app.kubernetes.io/name: {{ include "helper.name" . }}
+    helm.sh/chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
+    app.kubernetes.io/instance: "{{ .Release.Name }}"
+    app.kubernetes.io/managed-by: "{{ .Release.Service }}"
+data:
+  MO_CONFIG: "/data/config.json"
+          {{- range $name, $value := .Values.env }}
+          {{- if not (empty $value) }}
+  {{ $name }}: {{ $value | quote }}
+          {{- end }}
+          {{- end }}

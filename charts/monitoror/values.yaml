@@ -1,0 +1,65 @@
+
+#nameOverride: example
+
+image:
+  repo: monitoror/monitoror
+  tag: 4
+
+replicaCount: 1
+
+resources: {}
+  # We usually recommend not to specify default resources and to leave this as a conscious
+  # choice for the user. This also increases chances charts run on environments with little
+  # resources, such as Minikube. If you do want to specify resources, uncomment the following
+  # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
+  # limits:
+  #   cpu: 100m
+  #   memory: 128Mi
+  # requests:
+  #   cpu: 100m
+  #   memory: 128Mi
+
+service:
+  type: ClusterIP
+  externalPort: 8080
+
+config:
+  version: "2.0"
+  columns: 2
+  tiles:
+    - type: "PORT"
+      label: "Welcome config example"
+      params:
+        hostname: 127.0.0.1
+        port: 443
+    - type: "HTTP-RAW"
+      label: Monitoror stars
+      params:
+        url: "https://github.com/monitoror/monitoror"
+        regex: "(\\d+) users starred"
+
+ingress:
+  enabled: false
+  #ingressClassName: nginx
+  annotations: {}
+    # kubernetes.io/ingress.class: nginx
+    # kubernetes.io/tls-acme: "true"
+  hosts:
+    - chart-example.local
+
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+
+securityContext:
+  #runAsNonRoot: true
+  # Required for use of IRSA, see https://docs.aws.amazon.com/eks/latest/userguide/iam-roles-for-service-accounts-technical-overview.html
+  # fsGroup: 65534
+
+env: []
+
+pod_securityContext:
+  capabilities:
+    drop:
+      - all
